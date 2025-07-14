@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>No LIMITS Gym Website
+    </title>
+  </head>
+  <body>
+    <nav  id="home">
+      <div class="nav__logo" >
+        <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#programs">Program</a></li>
+        <li class="link"><a href="#plans">Plans</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+
+      </ul>
+      <button class="btn book-now">Join Now</button>
+    </nav>
+
+    <header class="section__container header__container">
+      <div class="header__content">
+        <span class="bg__blur"></span>
+        <span class="bg__blur header__blur"></span>
+        <h4>BEST FITNESS IN THE TOWN</h4>
+        <h1><span>MAKE</span> YOUR BODY SHAPE</h1>
+        <p>
+          Unleash your potential and embark on a journey towards a stronger,
+          fitter, and more confident you. Sign up for 'Make Your Body Shape' now
+          and witness the incredible transformation your body is capable of!
+        </p>
+        <button class="btn get-started">Get Started</button>
+      </div>
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+    </header>
+
+
+
+    <section class="section__container explore__container" id="programs">
+      <div class="explore__header">
+        <h2 class="section__header">EXPLORE OUR PROGRAM</h2>
+
+      </div>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-boxing-fill"></i></span>
+          <h4>Strength</h4>
+          <p>
+            Embrace the essence of strength as we delve into its various
+            dimensions physical, mental, and emotional.
+          </p>
+          <a href="#contact">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-heart-pulse-fill"></i></span>
+          <h4>Physical Fitness</h4>
+          <p>
+            It encompasses a range of activities that improve health, strength,
+            flexibility, and overall well-being.
+          </p>
+          <a href="#contact">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-run-line"></i></span>
+          <h4>Fat Lose</h4>
+          <p>
+            Through a combination of workout routines and expert guidance, we'll
+            empower you to reach your goals.
+          </p>
+          <a href="#contact">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-shopping-basket-fill"></i></span>
+          <h4>Weight Gain</h4>
+          <p>
+            Designed for individuals, our program offers an effective approach
+            to gaining weight in a sustainable manner.
+          </p>
+          <a href="#contact">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container class__container">
+      <div class="class__image">
+        <span class="bg__blur"></span>
+        <img src="assets/class-1.jpg" alt="class" class="class__img-1" />
+        <img src="assets/class-2.jpg" alt="class" class="class__img-2" />
+      </div>
+      <div class="class__content">
+        <h2 class="section__header">THE CLASS YOU WILL GET HERE</h2>
+        <p>
+          Led by our team of expert and motivational instructors, "The Class You
+          Will Get Here" is a high-energy, results-driven session that combines
+          a perfect blend of cardio, strength training, and functional
+          exercises. Each class is carefully curated to keep you engaged and
+          challenged, ensuring you never hit a plateau in your fitness
+          endeavors.
+        </p>
+        <button class="btn book-now">Book A Class</button>
+      </div>
+    </section>
+
+        <section class="price__container" id="bmi">
+  <h2 class="section__header">BMI Calculator</h2>
+  <p class="section__subheader">
+    Find your Body Mass Index and understand your health level instantly.
+  </p>
+  <div class="bmi__form">
+    <input type="number" id="bmi-height" placeholder="Height (cm)" />
+    <input type="number" id="bmi-weight" placeholder="Weight (kg)" />
+    <button class="btn" onclick="calculateBMI()">Calculate</button>
+  </div>
+  <div id="bmi-result" class="bmi__result"></div>
+</section>
+
+    <section class="section__container join__container">
+      <h2 class="section__header">WHY JOIN US ?</h2>
+      <p class="section__subheader">
+        Our diverse membership base creates a friendly and supportive
+        atmosphere, where you can make friends and stay motivated.
+      </p>
+      <div class="join__image">
+        <img src="assets/join.jpg" alt="Join" />
+        <div class="join__grid">
+          <div class="join__card">
+            <span><i class="ri-user-star-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Personal Trainer</h4>
+              <p>Unlock your potential with our expert Personal Trainers.</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-vidicon-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Practice Sessions</h4>
+              <p>Elevate your fitness with practice sessions.</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-building-line"></i></span>
+            <div class="join__card__content">
+              <h4>Good Management</h4>
+              <p>Supportive management, for your fitness success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container price__container" id="plans">
+      <h2 class="section__header">OUR PRICING PLAN</h2>
+      <p class="section__subheader">
+        Our pricing plan comes with various membership tiers, each tailored to
+        cater to different preferences and fitness aspirations.
+      </p>
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Basic Plan</h4>
+            <h3>$16</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Smart workout plan
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              At home workouts
+            </p>
+          </div>
+          <button class="btn price__btn book-now">Join Now</button>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Weekly Plan</h4>
+            <h3>$25</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              PRO Gyms
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Smart workout plan
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              At home workouts
+            </p>
+          </div>
+          <button class="btn price__btn book-now">Join Now</button>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Monthly Plan</h4>
+            <h3>$45</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              ELITE Gyms & Classes
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              PRO Gyms
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Smart workout plan
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              At home workouts
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Personal Training
+            </p>
+          </div>
+          <button class="btn price__btn book-now">Join Now</button>
+        </div>
+      </div>
+    </section>
+
+
+<section class="review">
+  <div class="section__container review__container">
+    <span><i class="ri-double-quotes-r"></i></span>
+    <div class="review__content-wrapper">
+      <div class="review__slides">
+        <!-- Review 1 -->
+        <div class="review__content active">
+          <h4>MEMBER REVIEW</h4>
+          <p>
+            What truly sets this gym apart is their expert team of trainers...
+          </p>
+          <div class="review__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-half-fill"></i></span>
+          </div>
+          <div class="review__footer">
+            <div class="review__member">
+              <img src="assets/member-1.jpg" alt="member" />
+              <div class="review__member__details">
+                <h4>Victor</h4>
+                <p>Fitness Enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review__content">
+          <h4>MEMBER REVIEW</h4>
+          <p>
+            I've never felt more motivated to train. The facility is excellent, and the energy is contagious!
+          </p>
+          <div class="review__rating">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="review__footer">
+            <div class="review__member">
+              <img src="assets/member-2.jpg" alt="member" />
+              <div class="review__member__details">
+                <h4>Jane</h4>
+                <p>Fitness Coach</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="review__content">
+  <h4>MEMBER REVIEW</h4>
+  <p>
+    I've tried several gyms before, but none felt as motivating as this one.
+    The energy is electric, and the trainers truly push you to reach your best.
+    Their personalized approach made a huge difference in my progress.
+  </p>
+  <div class="review__rating">
+    <span><i class="ri-star-fill"></i></span>
+    <span><i class="ri-star-fill"></i></span>
+    <span><i class="ri-star-fill"></i></span>
+    <span><i class="ri-star-fill"></i></span>
+    <span><i class="ri-star-fill"></i></span>
+  </div>
+  <div class="review__footer">
+    <div class="review__member">
+      <img src="assets/member-3.jpg" alt="member" />
+      <div class="review__member__details">
+        <h4>David Johnson</h4>
+        <p>Fitness Enthusiast</p>
+      </div>
+    </div>
+    <div class="review__nav">
+      <span><i class="ri-arrow-left-line"></i></span>
+      <span><i class="ri-arrow-right-line"></i></span>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Add more reviews here -->
+      </div>
+
+      <div class="review__nav">
+        <span id="prev-review"><i class="ri-arrow-left-line"></i></span>
+        <span id="next-review"><i class="ri-arrow-right-line"></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="section__container gym__contact" id="contact">
+  <h2 class="section__header">Let's Connect</h2>
+  <p class="section__subheader">
+    Have questions or ready to transform your fitness? Reach out to us!
+  </p>
+  <div class="contact__grid">
+    <!-- Left: Contact Form -->
+<form
+  id="gym-contact-form"
+  class="contact__form"
+>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+  <p id="form-status" class="form__status"></p>
+</form>
+
+
+    <!-- Right: Contact Info -->
+<!-- REPLACE the "Book a Class" button and social icons part -->
+<div class="contact__info" >
+  <h3>Reach Us At</h3>
+  <p><i class="ri-phone-line"></i> +91 98765 43210</p>
+  <p><i class="ri-mail-line"></i> contact@nolimits.com</p>
+  <p><i class="ri-map-pin-line"></i> 123 Gym Street, FitCity, India</p>
+
+  <div class="contact__socials">
+    <a href="#"><i class="ri-facebook-fill"></i></a>
+    <a href="#"><i class="ri-instagram-line"></i></a>
+    <a href="#"><i class="ri-twitter-fill"></i></a>
+    <a href="#"><i class="ri-youtube-fill"></i></a>
+  </div>
+
+  <!-- WhatsApp button -->
+  <a
+    href="https://wa.me/919876543210"
+    target="_blank"
+    class="btn book__btn whatsapp__btn"
+  >
+    <i class="ri-whatsapp-line"></i> Chat on WhatsApp
+  </a>
+</div>
+
+  </div>
+</section>
+
+
+
+
+<footer class=" footer__container">
+  <span class="bg__blur"></span>
+  <span class="bg__blur footer__blur"></span>
+
+  <!-- Logo + Description -->
+  <div class="footer__col">
+    <div class="footer__logo">
+      <img src="assets/logo.png" alt="logo" />
+    </div>
+   <p>
+  Ready to transform your fitness journey? Join us and become your best self with No Limits.
+</p>
+
+    <div class="footer__socials">
+      <a href="#"><i class="ri-facebook-fill"></i></a>
+      <a href="#"><i class="ri-instagram-line"></i></a>
+      <a href="#"><i class="ri-twitter-fill"></i></a>
+      <a href="#"><i class="ri-youtube-fill"></i></a>
+    </div>
+  </div>
+
+  <!-- Quick Links -->
+  <div class="footer__col">
+    <h4>Quick Links</h4>
+    <a href="#home">Home</a>
+    <a href="#programs">Programs</a>
+    <a href="#plans">Plans</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="footer__col">
+    <h4>Contact Info</h4>
+    <p><i class="ri-phone-line"></i> +91 98765 43210</p>
+    <p><i class="ri-mail-line"></i> contact@nolimits.com</p>
+    <p><i class="ri-map-pin-line"></i> 123 Gym Street, FitCity, India</p>
+  </div>
+</footer>
+
+<div class="footer__bar">
+  Copyright © 2025 No Limits. All rights reserved.
+</div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
