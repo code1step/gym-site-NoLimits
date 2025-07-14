@@ -82,7 +82,7 @@ body {
 nav {
   max-width: var(--max-width);
   margin: auto;
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,7 +90,7 @@ nav {
 }
 
 .nav__logo {
-  max-width: 150px;
+  max-width: 110px;
 }
 
 .nav__links {
@@ -878,18 +878,6 @@ nav {
   font-weight: 500;
 }
 
-
-@media (max-width: 768px) {
-  .contact__grid {
-    flex-direction: column;
-  }
-
-  .book__btn {
-    align-self: flex-start;
-  }
-}
-
-
 .footer__container {
   position: relative;
   display: grid;
@@ -901,8 +889,31 @@ nav {
   padding: 4rem 1rem;
   background-color: var(--primary-color-extra-light);
   min-width: 100%;
+  padding-inline: 10rem;
 }
 
 .footer__bar{
   text-align: center;
 }
+
+
+@media (max-width: 768px) {
+  .contact__grid {
+    flex-direction: column;
+  }
+
+  .book__btn {
+    align-self: flex-start;
+  }
+  .footer__container{
+    padding-inline: 2rem;
+  }
+}
+@media (max-width:500px){
+  .footer__container{
+    padding-inline: 1rem;
+  }
+}
+
+
+
